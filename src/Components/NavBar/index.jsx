@@ -5,16 +5,16 @@ function NavBar() {
     return (
         <header className="header"> 
             <div className="logo space-between">
-                <img src="shop.png" alt="logo"/>
+                <img src="./shop.png" alt="logo"/>
                 <p>VIVA<br/>LA BIRRA</p>
             </div>
             <div className="space-between">
                 <nav>  
-                    <ul>
-                        <li><a>Home</a></li>
-                        <li><a>Artesanales</a></li>
-                        <li><a>Comerciales</a></li>
-                        <li><a>Importadas</a></li>
+                    <ul className='space-between nav'>
+                        <li className='nav'><a>Home</a></li>
+                        <li className='nav'><a>Artesanales</a></li>
+                        <li className='nav'><a>Comerciales</a></li>
+                        <li className='nav'><a>Importadas</a></li>
                     </ul>
                 </nav>
                 <CartWidget cantidad= "2"></CartWidget>

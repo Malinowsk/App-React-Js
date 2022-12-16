@@ -3,7 +3,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 
 function CartWidget(props) {
   return (
-    <div id="cartWidget-container"> <FaCartArrowDown />  {props.cantidad}</div>
+    <div><FaCartArrowDown/>{props.cantidad}</div>
   )
 }
 
