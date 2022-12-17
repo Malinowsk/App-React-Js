@@ -1,6 +1,15 @@
+@font-face {    /* importar el tipo de letra que se va usar en el sitio web*/
+  font-family: 'HKGrotesk-Medium';
+  src: url(font/HKGrotesk-Medium.otf);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'HKGrotesk-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,9 +19,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-*{
-  margin: 0px;
-  padding: 0px;
 }

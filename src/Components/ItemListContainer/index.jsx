@@ -2,9 +2,9 @@ import './style.css';
 
 function ItemListContainer({ title }) {
     return (
-      <div>
+      <main>
         {title}
-      </div>
+      </main>
     );
 }
 

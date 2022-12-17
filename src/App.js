@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer title="Bienvenido!!!"></ItemListContainer>
+      <ItemListContainer title="Bienvenido!!! Esta es una e-commerce de Cervezas!!"></ItemListContainer>
     </div>
   );
 } 

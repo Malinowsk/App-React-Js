@@ -2,22 +2,35 @@
     background-color: black;
     color: white;
     font-weight: bold;
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-}
-
-.logo{
-    background-color: red;
+    align-items: center;
 }
 
 
 .space-between{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.item-nav{
+    margin: 0px 10px;
+}
 .nav{
     list-style: none;
-    margin: 0px 30px;
+}
+
+.imagen-logo{
+    height: 5rem;
+}
+
+.titulo-logo{
+    font-style: italic;
+}
+
+nav ul a:hover{
+    color: #f8ac18;
+    cursor: pointer;
 }
