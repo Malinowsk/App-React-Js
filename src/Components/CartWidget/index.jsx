@@ -1,9 +1,9 @@
 import './style.css'
-import { FaCartArrowDown } from "react-icons/fa";
+import { ShoppingCartOutlined } from '@ant-design/icons';
 
 function CartWidget(props) {
   return (
-    <div><FaCartArrowDown className="cartWidget-container"/>{props.cantidad}</div>
+    <div><ShoppingCartOutlined className="cartWidget-container"/>{props.cantidad}</div>
   )
 }
 

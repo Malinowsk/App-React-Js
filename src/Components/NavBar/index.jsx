@@ -18,7 +18,7 @@ function NavBar() {
                         <li className='item-nav'><a>Importadas</a></li>
                     </ul>
                 </nav>
-                <CartWidget cantidad= "2"></CartWidget>
+                <CartWidget cantidad="10"></CartWidget>
             </div>
         </header>
     );
