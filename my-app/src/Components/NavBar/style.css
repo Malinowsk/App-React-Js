@@ -1,7 +1,6 @@
 .header{
     background-color: black;
     color: white;
-    font-weight: bold;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -27,6 +26,8 @@
 
 .titulo-logo{
     font-style: italic;
+    color: #f8ac18;
+    opacity: 0.8;
 }
 
 nav ul a:hover{
@@ -52,6 +53,8 @@ a{
 .button-hamb{
     display: block;
     width: 60px;
+    color: #f8ac18;
+    opacity: 0.8;
 }
 
 .invisibilidad{

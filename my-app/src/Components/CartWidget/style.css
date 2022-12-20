@@ -1,10 +1,27 @@
 .cartWidget-container{
         margin: 0px 10px;
+        font-size:40px;
+        color: #f8ac18;
+        opacity: 0.8;
 }
 
 .cart-container{
         width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
+
+.cant-carrito{
+        font-size: 20px;
+        padding: 2px;
+        background-color: #f8ac18;
+        color: black;
+        border: 1px solid red;
+        border-radius: 50px;
+        width: 25px;
+}
+
 
 @media only screen and (min-width: 768px)  {
         .cart-container{

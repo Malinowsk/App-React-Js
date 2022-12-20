@@ -31,7 +31,7 @@ function NavBar() {
 
             {/* CARRITO Y CONTADOR */}
             <div className="space-between">
-                <CartWidget cantidad="10"></CartWidget>
+                <CartWidget cantidad="8"></CartWidget>
             </div>
         </header>
     );
