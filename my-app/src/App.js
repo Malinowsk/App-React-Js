@@ -1,12 +1,13 @@
 import "./App.css";
 import NavBar from './Components/NavBar';
-import ItemListContainer from './Components/ItemListContainer';
+import ItemListContainer from './Components/ItemListContainer/nuevo';
 
 export default function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer title="Bienvenido!!! Esta es una e-commerce de Cervezas!!"></ItemListContainer>
+      {/* <ItemListContainer title="Bienvenido!!! Esta es una e-commerce de Cervezas!!"></ItemListContainer> */}
+      <ItemListContainer/>
     </div>
   );
 } 
