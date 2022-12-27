@@ -1,5 +1,4 @@
 // declaro constante con array de productos y lo exporto
-
 export const arrayProductos = [
     {
         name: 'Imperial Roja',
@@ -41,7 +40,6 @@ export const arrayProductos = [
         category: 'invierno',
         id: 4
     },
-    
     {
         name: 'Grolsch Red',
         price: 800,
@@ -102,6 +100,4 @@ export const arrayProductos = [
         category: 'rubia',
         id: 10
     }
-
-    
 ];
