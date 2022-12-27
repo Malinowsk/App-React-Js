@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
-
 import './style.css';
-// import ItemCount from '../ItemCount';
 
 import { arrayProductos } from "../../ArrayProductos/data.js";
 import ItemList from "../ItemList/ItemList.js";
-//import { useParams } from "react-router";
+import { useParams } from "react-router";
 
 // contenedor de catalogo, recibe datos que van a renderizar los componentes hijos y se los pasa como props
 function ItemListContainer() {
-    //console.log(id);
-
-  //const { id } = useParams()
+  
+  const { id } = useParams()
+  console.log(id);
 
   // useState para introducir en el estado productos, lo que consuma del arrayProductos
   const [productos, setProductos] = useState([]);
@@ -29,26 +27,21 @@ function ItemListContainer() {
 
   const getsProductsPromise = new Promise((res, rej) => {
     setTimeout(() => {
-    //   if(false){
-    //     console.log("si");
-    //     // const productosFiltrados = arrayProductos.filter(e => e.category === id)
-    //     // res(productosFiltrados);
-    //   }  
-      console.log("no");
+       if(id){
+          const productosFiltrados = arrayProductos.filter(e => e.tipo === id)
+          res(productosFiltrados);
+       }  
       res(arrayProductos)
-      
     }, 2000);
   });
 
   return (
-    <>
-      <main>
-        <h1> PRODUCTOS DEL CATÁLOGO </h1>
-        <ItemList // pasamos los productos como props a ItemList
-          items={productos}
-        />
-      </main>
-    </>
+    <main>
+      <h1> Productos Del Catálogo </h1>
+      <ItemList // pasamos los productos como props a ItemList
+        items={productos}
+      />
+    </main>
   );
 };
 
