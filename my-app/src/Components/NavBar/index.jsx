@@ -3,6 +3,7 @@ import CartWidget from '../CartWidget';
 
 import logo from '../../assets/logo.png';          // LOGO DE LA PAG
 import { MenuOutlined } from '@ant-design/icons'; //ICONO DEL BOTON HAMBURGUESA
+import { Link } from 'react-router-dom';
 
 
 function NavBar() {
@@ -22,10 +23,10 @@ function NavBar() {
             {/* MENU DE NAVEGACION */}
             <nav className='content'>  
                 <ul id='menu' className='space-between menu invisibilidad' >
-                    <li className='item-nav'><a href='http:/'>Inicio</a></li>
-                    <li className='item-nav'><a href='http:/'>Catálogo</a></li>
-                    <li className='item-nav'><a href='http:/'>Nosotros</a></li>
-                    <li className='item-nav'><a href='http:/'>Contacto</a></li>
+                    <li className='item-nav'><Link to='/'>Inicio</Link></li>
+                    <li className='item-nav'><Link to='/catalogo'>Catálogo</Link></li>
+                    <li className='item-nav'><Link to='/'>Nosotros</Link></li>
+                    <li className='item-nav'><Link to='/'>Contacto</Link></li>
                 </ul>
             </nav>
 

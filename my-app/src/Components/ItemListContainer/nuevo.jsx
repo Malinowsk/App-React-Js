@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import './style.css';
 // import ItemCount from '../ItemCount';
 
-import { arrayProductos } from "../ArrayProductos/data.js";
+import { arrayProductos } from "../../ArrayProductos/data.js";
 import ItemList from "../ItemList/ItemList.js";
 //import { useParams } from "react-router";
 
