@@ -22,10 +22,10 @@ function NavBar() {
             {/* MENU DE NAVEGACION */}
             <nav className='content'>  
                 <ul id='menu' className='space-between menu invisibilidad' >
-                    <li className='item-nav'><a href='http:/'>Home</a></li>
-                    <li className='item-nav'><a href='http:/'>Artesanales</a></li>
-                    <li className='item-nav'><a href='http:/'>Comerciales</a></li>
-                    <li className='item-nav'><a href='http:/'>Importadas</a></li>
+                    <li className='item-nav'><a href='http:/'>Inicio</a></li>
+                    <li className='item-nav'><a href='http:/'>Catálogo</a></li>
+                    <li className='item-nav'><a href='http:/'>Nosotros</a></li>
+                    <li className='item-nav'><a href='http:/'>Contacto</a></li>
                 </ul>
             </nav>
 

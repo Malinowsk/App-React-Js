@@ -2,9 +2,9 @@
 
 export const arrayProductos = [
     {
-        name: 'Campera de Lana',
+        name: 'Imperial Roja',
         price: 1000,
-        img: 'https://http2.mlstatic.com/D_NQ_NP_929032-MLA26774950524_022018-O.jpg',
+        img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/9_d437c2b5-18d4-4ed0-b9c3-9c97e6128506_1080x.png?v=1648657110',
         stock: 5,
         description: 'hecho a mano con lana peruana',
         talle: 'Talle: 1',
@@ -12,18 +12,18 @@ export const arrayProductos = [
         id: 1
     },
     {
-        name: 'Saco',
+        name: 'Grolsch',
         price: 1200,
-        img: 'https://images.pexels.com/photos/7139943/pexels-photo-7139943.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+        img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/MLA920764471_1080x.png?v=1622091948',
         stock: 4,
         talle: 'Talle 2',
         category: 'verano',
         id: 2
     },
     {
-        name: 'Overol',
+        name: 'Heineker',
         price: 800,
-        img: 'https://dulcedelana.com/wp-content/uploads/2021/11/overol-bobo-blanco-perla.png',
+        img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/MLA920759204_1080x.png?v=1666805088',
         stock: 5,
         description: 'Overol Beige con botones de caña',
         talle: 'Talle: 2',
@@ -31,9 +31,9 @@ export const arrayProductos = [
         id: 3
     },
     {
-        name: 'Calcetines',
+        name: 'Norte',
         price: 400,
-        img: 'https://dulcedelana.com/wp-content/uploads/2022/01/calcetines-calcis-9.png',
+        img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/7_b6630e70-2a2f-465f-b31e-2e199f29378b_1080x.png?v=1640879429',
         stock: 5,
         description: 'Calcetines de lana',
         talle: 'Talle: 3',
@@ -42,9 +42,9 @@ export const arrayProductos = [
     },
     
     {
-        name: 'Conjunto para bebe',
+        name: 'Grolsch Red',
         price: 800,
-        img: 'https://dulcedelana.com/wp-content/uploads/2021/08/los-clasicos-conjunto-senso-2-blanco-perla-bb.jpg',
+        img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/x1_1080x.png?v=1663166251',
         stock: 8,
         description:'De lana suave',
         talle: 'Talle: 3',
@@ -52,53 +52,53 @@ export const arrayProductos = [
         id: 6
     },
     {
-        name: 'Vestido',
+        name: 'Ocaso Weisse',
         price: 1000,
-        img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/906/331/products/vest-colores1-2cb523df76a83b7a8c16469195245251-1024-1024.jpg',
+        img: 'https://cervezaocaso.com/wp-content/uploads/2020/08/weisse-300x300.jpg',
         stock: 8,
-        description: 'Vestido suave',
+        description: 'Ocaso Weisse | 473ml X 12 | IBU 12 | 4.80%',
         talle: 'Talle: 3',
         category: 'primavera',
         id: 7
     },
     {
-        name: 'Jardineros',
+        name: 'Michelob Ultra',
         price: 2000,
-        img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/906/331/products/pechera-rosa-y-nat-e18a2b9c0d7dd7577516469191897367-1024-1024.jpg',
+        img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/195090-600-600/CERVEZA-MICHELOB-ULTRA-LATA-X-410-Ml-1-28593.jpg?v=637862385730900000',
         stock: 5,
-        description: 'Jardineros de lana',
-        talle: 'Talle: 2',
-        category: 'primavera',
+        description: 'CERVEZA MICHELOB ULTRA LATA X 410 ML',
+        tipo: 'importada',
+        category: 'rubia',
         id: 8
     },
     {
-        name: 'Amalfi',
+        name: 'Andes Roja',
         price: 1600,
-        img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/906/331/products/amal-dos-col1-4df3859c72961de4f316482211572688-1024-1024.jpg',
+        img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/197535-600-600/CERVEZA-ANDES-ORIGEN-IPA-ROJA-LATA-X-473-Ml-1-29613.jpg?v=637903210012470000',
         stock: 4,
-        description: 'Buzo de lana',
-        talle: 'Talle: 1',
-        category: 'otoño',
+        description: 'CERVEZA ANDES ORIGEN IPA ROJA LATA X 473 ML',
+        tipo: 'nacional',
+        category: 'roja',
         id: 5
     },
     {
-        name: 'Alba',
+        name: 'Patagonia 24.7',
         price: 1400,
-        img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/906/331/products/pant-tiradones-nena-espalda1-40176725e0d61672c416469198179038-1024-1024.jpg',
+        img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/193802-600-600/CERVEZA-PATAGONIA-24-7-LATA-X-410-Ml-1-28942.jpg?v=637834953821100000',
         stock: 5,
-        description: 'Hecho a mano con lana peruana',
-        talle: 'Talle: 6-12m',
-        category: 'otoño',
+        description: 'CERVEZA PATAGONIA 24.7 LATA X 410 ML',
+        tipo: 'nacional',
+        category: 'artesanal',
         id: 11
     },
     {
-        name: 'Furore',
+        name: 'Sol',
         price: 700,
-        img: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/906/331/products/cuello-colores1-0e576324c3e973a86516473553828307-1024-1024.jpg',
+        img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/156793-600-600/Cerveza-Long-Neck-Rubia-Sol-330Cc-CERVEZA-SOL-LONG-NECK-330CC-1-287.jpg?v=637236240690330000',
         stock: 4,
-        description: 'Furore de colores',
-        talle: 'Unico',
-        category: 'invierno',
+        description: 'CERVEZA SOL LONG NECK 330CC',
+        tipo: 'importada',
+        category: 'rubia',
         id: 10
     }
 

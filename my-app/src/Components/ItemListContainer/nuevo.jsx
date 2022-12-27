@@ -42,12 +42,12 @@ function ItemListContainer() {
 
   return (
     <>
-      <div>
-        <h1> PRODUCTOS DESTACADOS </h1>
+      <main>
+        <h1> PRODUCTOS DEL CATÁLOGO </h1>
         <ItemList // pasamos los productos como props a ItemList
           items={productos}
         />
-      </div>
+      </main>
     </>
   );
 };

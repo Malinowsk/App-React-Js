@@ -28,12 +28,10 @@
 }
 
 .card-container img{
-   width: 400px;
-   height: 400px;
-   padding: 20px;
+   width: 70%;
+   height: auto;
+   
 }
-
-
 
 .ItemCount{
        display: grid;
@@ -41,8 +39,20 @@
     
 }
 
+@media only screen and (min-width: 768px)  {
+    .card-container img{
+        width: 300px;
+        height: 300px;
+        
+     }
+}
+
 
 .button-comprar {
     text-decoration: none;
     color: ivory;
+}
+
+.item-container button:hover{
+    background-color: #f8ac18;
 }
