@@ -5,9 +5,9 @@ export const arrayProductos = [
         price: 1000,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/9_d437c2b5-18d4-4ed0-b9c3-9c97e6128506_1080x.png?v=1648657110',
         stock: 5,
-        description: 'hecho a mano con lana peruana',
+        description: 'Lata Imperial Roja Nueva - 473 cm3',
         tipo: 'comerciales',
-        category: 'otoño',   
+        category: 'Roja',
         id: 1
     },
     {
@@ -15,9 +15,9 @@ export const arrayProductos = [
         price: 1200,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/MLA920764471_1080x.png?v=1622091948',
         stock: 4,
-        description: 'hecho a mano con lana peruana',
+        description: 'Grolsch Lager - 473 cm3',
         tipo: 'importadas',
-        category: 'verano',
+        category: 'Lager',
         id: 2
     },
     {
@@ -25,9 +25,9 @@ export const arrayProductos = [
         price: 800,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/MLA920759204_1080x.png?v=1666805088',
         stock: 5,
-        description: 'Overol Beige con botones de caña',
+        description: 'Heineken',
         tipo: 'comerciales',
-        category: 'invierno',
+        category: 'Lager',
         id: 3
     },
     {
@@ -35,9 +35,9 @@ export const arrayProductos = [
         price: 400,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/7_b6630e70-2a2f-465f-b31e-2e199f29378b_1080x.png?v=1640879429',
         stock: 5,
-        description: 'Calcetines de lana',
+        description: 'Norte',
         tipo: 'importadas',
-        category: 'invierno',
+        category: 'Rubia',
         id: 4
     },
     {
@@ -45,9 +45,9 @@ export const arrayProductos = [
         price: 800,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/x1_1080x.png?v=1663166251',
         stock: 8,
-        description:'De lana suave',
+        description:'Grolsch Red',
         tipo: 'importadas',
-        category: 'verano',
+        category: 'Roja',
         id: 6
     },
     {
@@ -57,7 +57,7 @@ export const arrayProductos = [
         stock: 8,
         description: 'Ocaso Weisse | 473ml X 12 | IBU 12 | 4.80%',
         tipo: 'artesanales',
-        category: 'primavera',
+        category: 'Malta',
         id: 7
     },
     {
@@ -99,5 +99,35 @@ export const arrayProductos = [
         tipo: 'importadas',
         category: 'rubia',
         id: 10
+    },
+    {
+        name: 'Blest',
+        price: 700,
+        img: 'http://d3ugyf2ht6aenh.cloudfront.net/stores/861/458/products/3305131-fd255704693d6953b216334423380679-640-0.webp',
+        stock: 4,
+        description: 'Cerveza Blest 1989 Apa Lata 473ml',
+        tipo: 'artesanales',
+        category: 'Apa',
+        id: 12
+    },
+    {
+        name: 'Gauther',
+        price: 700,
+        img: 'https://http2.mlstatic.com/D_NQ_NP_841564-MLA49927884007_052022-V.jpg',
+        stock: 4,
+        description: 'Gauther Lata 473ml',
+        tipo: 'artesanales',
+        category: 'Negra',
+        id: 13
+    },
+    {
+        name: 'Chichingo Porter',
+        price: 700,
+        img: 'http://d2r9epyceweg5n.cloudfront.net/stores/002/143/078/products/chachingo-porter1-70413378ab11fbdf9616613580898893-640-0.jpg',
+        stock: 4,
+        description: 'Chichingo Porter Lata 473ml',
+        tipo: 'artesanales',
+        category: 'Negra',
+        id: 14
     }
 ];

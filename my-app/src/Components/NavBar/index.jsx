@@ -1,16 +1,14 @@
 import './style.css';
-import CartWidget from '../CartWidget';            
-
+import CartWidget from '../CartWidget';    
 import logo from '../../assets/logo.png';          // LOGO DE LA PAG
 import { MenuOutlined } from '@ant-design/icons'; //ICONO DEL BOTON HAMBURGUESA
 import { Link } from 'react-router-dom';
-
 
 function NavBar() {
     return (
         <header className="header"> 
             {/* BOTON PARA MOVIL */}
-            <div  class="button-hamb" onClick={toggerInvi}>
+            <div  className="button-hamb" onClick={toggerInvi}>
                 <MenuOutlined />
             </div>
         
@@ -41,7 +39,6 @@ function NavBar() {
     /* FUNCION QUE HACE VISIBLE E INVISIBLE EL MENU PARA MOBILE*/
 function toggerInvi(){
     document.querySelector("#menu").classList.toggle("invisibilidad");
-
 }
 
 export default NavBar;

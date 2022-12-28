@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import './style.css';
-
 import { arrayProductos } from "../../ArrayProductos/data.js";
 import ItemList from "../ItemList";
 import { useParams } from "react-router";
 
 function ItemListContainer() {
   
-  const { id } = useParams()
+  const { id } = useParams();
 
   const [productos, setProductos] = useState([]);
   
@@ -17,12 +16,10 @@ function ItemListContainer() {
       .catch((err) => console.log(err));
   });
 
-  
-
   const getsProductsPromise = new Promise((res, rej) => {
     setTimeout(() => {
       if(id){
-        const productosFiltrados = arrayProductos.filter(e => e.tipo === id)
+        const productosFiltrados = arrayProductos.filter(e => e.tipo === id);
         res(productosFiltrados);
       }
       else{
