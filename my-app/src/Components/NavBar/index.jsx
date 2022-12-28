@@ -17,7 +17,7 @@ function NavBar() {
             {/* LOGO Y NOMBRE DE WEB */}
             <div className="space-between">
                 <img className="imagen-logo" src={logo} alt="logo-cerveza"/>
-                <p className="titulo-logo">VIVA<br/>LA BIRRA</p>
+                <Link to='/'><p className="titulo-logo">VIVA<br/>LA BIRRA</p></Link>
             </div>
         
             {/* MENU DE NAVEGACION */}
@@ -32,7 +32,7 @@ function NavBar() {
 
             {/* CARRITO Y CONTADOR */}
             <div className="space-between">
-                <CartWidget cantidad="8"></CartWidget>
+                <CartWidget cantidad="8"/>
             </div>
         </header>
     );

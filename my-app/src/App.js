@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from './Components/NavBar';
-import ItemListContainer from './Components/ItemListContainer/nuevo';
+import ItemListContainer from './Components/ItemListContainer';
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
