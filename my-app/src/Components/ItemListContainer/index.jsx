@@ -7,14 +7,8 @@ import { useParams } from "react-router";
 function ItemListContainer() {
   
   const { id } = useParams();
-
   const [productos, setProductos] = useState([]);
-  
-  useEffect(() => {
-    getsProductsPromise 
-      .then((arrayp) => setProductos(arrayp))
-      .catch((err) => console.log(err));
-  });
+  const [loading, setLoading] = useState(true);
 
   const getsProductsPromise = new Promise((res, rej) => {
     setTimeout(() => {
@@ -27,13 +21,45 @@ function ItemListContainer() {
       }  
     }, 2000);
   });
+  
+  const getsProducts = async() =>{
+    try {
+      const value = await getsProductsPromise;
+      setProductos(value);
+    } catch (error) {
+      console.error(error);
+    }
+    finally {
+      setLoading(false);
+    }
+   }
+
+    useEffect(() => {
+      getsProducts();
+      // eslint-disable-next-line
+      }, [id]);
 
   return (
     <main>
-      <h1> Productos Destacados </h1>
-      <ItemList items={productos}/>
+      <h1>
+        {id ? `Cervezas ${id}` : "Todas las cervezas"}
+      </h1>
+      <div>
+        {loading ? 
+        (
+          <p>Cargando, espere un momento...</p>
+        ) : productos.length > 0 ? 
+          (
+            <ItemList items={productos}/>
+          ) : 
+            (
+              <p>No hay cervezas de esta categoria</p>
+            )
+        }
+      </div>
     </main>
   );
+
 };
 
 export default ItemListContainer;
