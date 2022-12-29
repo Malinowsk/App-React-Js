@@ -9,7 +9,7 @@ const Item = ({producto}) => {
     <div className='item-container'>
       <h2> {producto.name} </h2>
       <img src={producto.img} alt="error"/> 
-      <h3> $ {producto.name} </h3>
+      <p> $ {producto.price} </p>
       <button> <Link  className='button-comprar'  to={`/item/${producto.id}`}> Detalles </Link> </button>
       {/* <h3> {producto.stock}</h3> */}
       {/* <div classname={ItemCount}>
