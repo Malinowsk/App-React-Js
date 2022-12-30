@@ -64,6 +64,10 @@ a{
     display: contents;
 }
 
+.pag-actual{
+    color: aqua !important; 
+}
+
 
 @media only screen and (min-width: 768px)  {
     .menu{
@@ -90,6 +94,10 @@ a{
     }
     .invisibilidad{
         display: flex;
+    }
+
+    .pag-actual{
+        color: aqua !important; 
     }
 
 }

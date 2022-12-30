@@ -4,7 +4,9 @@ import logo from '../../assets/logo.png';          // LOGO DE LA PAG
 import { MenuOutlined } from '@ant-design/icons'; //ICONO DEL BOTON HAMBURGUESA
 import { Link } from 'react-router-dom';
 
+
 function NavBar() {
+    
     return (
         <header className="header"> 
             {/* BOTON PARA MOVIL */}
@@ -21,10 +23,10 @@ function NavBar() {
             {/* MENU DE NAVEGACION */}
             <nav className='content'>  
                 <ul id='menu' className='space-between menu invisibilidad' >
-                    <li className='item-nav'><Link to='/'>Home</Link></li>
-                    <li className='item-nav'><Link to='/categoria/artesanales'>Artesanales</Link></li>
-                    <li className='item-nav'><Link to='/categoria/comerciales'>Comerciales</Link></li>
-                    <li className='item-nav'><Link to='/categoria/importadas'>Importadas</Link></li>
+                    <li className='item-nav ' id="#home"><Link to='/'>Home</Link></li>
+                    <li className='item-nav' id="#artesanales"><Link to='/categoria/artesanales'>Artesanales</Link></li>
+                    <li className='item-nav' id="#comerciales"><Link to='/categoria/comerciales'>Comerciales</Link></li>
+                    <li className='item-nav' id="#importadas"><Link to='/categoria/importadas'>Importadas</Link></li>
                 </ul>
             </nav>
 
@@ -32,13 +34,21 @@ function NavBar() {
             <div className="space-between">
                 <CartWidget cantidad="8"/>
             </div>
+
         </header>
     );
 }
 
-    /* FUNCION QUE HACE VISIBLE E INVISIBLE EL MENU PARA MOBILE*/
+/* FUNCION QUE HACE VISIBLE E INVISIBLE EL MENU PARA MOBILE*/
 function toggerInvi(){
     document.querySelector("#menu").classList.toggle("invisibilidad");
 }
+
+// //colorea el boton de navegacion 
+// function seleccionarTab(id){
+//     document.querySelectorAll(".navegacion").forEach((item)=> item.classList.remove("pag-actual")); 
+//     document.querySelector(`#${id}`).classList.add("pag-actual");
+// }
+
 
 export default NavBar;

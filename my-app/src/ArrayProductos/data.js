@@ -2,7 +2,7 @@
 export const arrayProductos = [
     {
         name: 'Imperial Roja',
-        price: 1000,
+        price: 80,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/9_d437c2b5-18d4-4ed0-b9c3-9c97e6128506_1080x.png?v=1648657110',
         stock: 5,
         description: 'Lata Imperial Roja Nueva - 473 cm3',
@@ -12,7 +12,7 @@ export const arrayProductos = [
     },
     {
         name: 'Grolsch',
-        price: 1200,
+        price: 120,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/MLA920764471_1080x.png?v=1622091948',
         stock: 4,
         description: 'Grolsch Lager - 473 cm3',
@@ -22,7 +22,7 @@ export const arrayProductos = [
     },
     {
         name: 'Heineker',
-        price: 800,
+        price: 90,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/MLA920759204_1080x.png?v=1666805088',
         stock: 5,
         description: 'Heineken',
@@ -32,7 +32,7 @@ export const arrayProductos = [
     },
     {
         name: 'Norte',
-        price: 400,
+        price: 100,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/7_b6630e70-2a2f-465f-b31e-2e199f29378b_1080x.png?v=1640879429',
         stock: 5,
         description: 'Norte',
@@ -42,7 +42,7 @@ export const arrayProductos = [
     },
     {
         name: 'Grolsch Red',
-        price: 800,
+        price: 125,
         img: 'https://cdn.shopify.com/s/files/1/0556/6971/9230/products/x1_1080x.png?v=1663166251',
         stock: 8,
         description:'Grolsch Red',
@@ -52,7 +52,7 @@ export const arrayProductos = [
     },
     {
         name: 'Ocaso Weisse',
-        price: 1000,
+        price: 100,
         img: 'https://cervezaocaso.com/wp-content/uploads/2020/08/weisse-300x300.jpg',
         stock: 8,
         description: 'Ocaso Weisse | 473ml X 12 | IBU 12 | 4.80%',
@@ -62,7 +62,7 @@ export const arrayProductos = [
     },
     {
         name: 'Michelob Ultra',
-        price: 2000,
+        price: 200,
         img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/195090-600-600/CERVEZA-MICHELOB-ULTRA-LATA-X-410-Ml-1-28593.jpg?v=637862385730900000',
         stock: 5,
         description: 'CERVEZA MICHELOB ULTRA LATA X 410 ML',
@@ -72,7 +72,7 @@ export const arrayProductos = [
     },
     {
         name: 'Andes Roja',
-        price: 1600,
+        price: 85,
         img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/197535-600-600/CERVEZA-ANDES-ORIGEN-IPA-ROJA-LATA-X-473-Ml-1-29613.jpg?v=637903210012470000',
         stock: 4,
         description: 'CERVEZA ANDES ORIGEN IPA ROJA LATA X 473 ML',
@@ -82,7 +82,7 @@ export const arrayProductos = [
     },
     {
         name: 'Patagonia 24.7',
-        price: 1400,
+        price: 140,
         img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/193802-600-600/CERVEZA-PATAGONIA-24-7-LATA-X-410-Ml-1-28942.jpg?v=637834953821100000',
         stock: 5,
         description: 'CERVEZA PATAGONIA 24.7 LATA X 410 ML',
@@ -92,7 +92,7 @@ export const arrayProductos = [
     },
     {
         name: 'Sol',
-        price: 700,
+        price: 200,
         img: 'https://hiperlibertad.vteximg.com.br/arquivos/ids/156793-600-600/Cerveza-Long-Neck-Rubia-Sol-330Cc-CERVEZA-SOL-LONG-NECK-330CC-1-287.jpg?v=637236240690330000',
         stock: 4,
         description: 'CERVEZA SOL LONG NECK 330CC',
@@ -102,7 +102,7 @@ export const arrayProductos = [
     },
     {
         name: 'Blest',
-        price: 700,
+        price: 250,
         img: 'http://d3ugyf2ht6aenh.cloudfront.net/stores/861/458/products/3305131-fd255704693d6953b216334423380679-640-0.webp',
         stock: 4,
         description: 'Cerveza Blest 1989 Apa Lata 473ml',
@@ -112,7 +112,7 @@ export const arrayProductos = [
     },
     {
         name: 'Gauther',
-        price: 700,
+        price: 200,
         img: 'https://http2.mlstatic.com/D_NQ_NP_841564-MLA49927884007_052022-V.jpg',
         stock: 4,
         description: 'Gauther Lata 473ml',
@@ -122,7 +122,7 @@ export const arrayProductos = [
     },
     {
         name: 'Chichingo Porter',
-        price: 700,
+        price: 400,
         img: 'http://d2r9epyceweg5n.cloudfront.net/stores/002/143/078/products/chachingo-porter1-70413378ab11fbdf9616613580898893-640-0.jpg',
         stock: 4,
         description: 'Chichingo Porter Lata 473ml',
