@@ -44,4 +44,11 @@ function toggerInvi(){
     document.querySelector("#menu").classList.toggle("invisibilidad");
 }
 
+// //colorea el boton de navegacion 
+// function seleccionarTab(id){
+//     document.querySelectorAll(".navegacion").forEach((item)=> item.classList.remove("pag-actual")); 
+//     document.querySelector(`#${id}`).classList.add("pag-actual");
+// }
+
+
 export default NavBar;
