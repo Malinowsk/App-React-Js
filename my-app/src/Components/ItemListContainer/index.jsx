@@ -35,6 +35,8 @@ function ItemListContainer() {
    }
 
     useEffect(() => {
+      setLoading(true);
+
       getsProducts();
       // eslint-disable-next-line
       }, [id]);
@@ -57,9 +59,9 @@ function ItemListContainer() {
             )
         }
       </div>
+      
     </main>
   );
-
 };
 
 export default ItemListContainer;
