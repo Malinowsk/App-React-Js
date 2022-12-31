@@ -55,8 +55,6 @@ const ItemDetailContainer = () => {
               
             )
         }
-        {console.log(id)}
-        {console.log(detail)}
     </div>
 
   )

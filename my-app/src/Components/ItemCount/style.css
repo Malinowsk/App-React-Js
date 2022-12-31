@@ -1,0 +1,66 @@
+.Itemcount div {
+    /* border: 1px solid black; */
+    margin: 10px 0px;
+
+}
+
+
+.removeButton{
+    background-color: black;
+    /* border: 1px solid black; */
+    border: 1px solid ivory;
+    color: ivory;
+    border-radius: 8px;
+    padding: 5px 20px;
+}
+
+.removeButton:hover{
+    background-color: #f8ac18;
+    transition: background-color 1s ease;
+    outline: 0;
+    color: black;
+}
+
+
+.addButton{
+    border: 1px solid ivory;
+    border-radius: 8px;
+  /*   border: 1px solid black; */
+  background-color: black;
+  color: ivory;
+    padding: 5px 20px;
+}
+
+.addButton:hover{
+    background-color: #f8ac18;
+    transition: background-color 1s ease;
+    outline: 0;
+    color: black;
+}
+
+
+.count{
+   color: black;
+    padding: 0px 20px;
+}
+
+
+.addCarrito {
+    border: 1px solid ivory;
+    border-radius: 8px;
+  /*   border: 1px solid black; */
+    background-color: black;
+    color: ivory;
+    padding: 10px;
+    
+    
+    
+}
+
+.addCarrito:hover {
+    background-color: #f8ac18;
+    transition: background-color 1s ease ;
+    outline: 0;
+    color: black;
+}
+

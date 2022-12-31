@@ -13,7 +13,7 @@ function ItemListContainer() {
   const getsProductsPromise = new Promise((res, rej) => {
     setTimeout(() => {
       if(id){
-        const productosFiltrados = arrayProductos.filter(e => e.tipo === id);
+        const productosFiltrados = arrayProductos.filter(e => e.category === id);
         res(productosFiltrados);
       }
       else{
