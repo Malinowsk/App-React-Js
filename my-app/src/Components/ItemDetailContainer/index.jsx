@@ -13,8 +13,6 @@ const ItemDetailContainer = () => {
    
     const getDetailPromise = new Promise((res,rej) => {
         setTimeout(() => {
-          // {console.log(id)}
-          // {console.log(arrayProductos)}
           const productoFiltrado = arrayProductos.find(e => e.id === Number(id))
           res(productoFiltrado)
         }, (2000));
