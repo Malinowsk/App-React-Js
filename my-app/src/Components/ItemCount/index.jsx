@@ -12,9 +12,11 @@ function ItemCount({ stock, initial, onAdd }) {
     if (contador < stock) setContador(contador + 1);
   };
 
+  const onConfirm = () => {
+    onAdd(contador)
+  }
+
   return (
-    // <div>
-      <>
       <div className="Itemcount">
         <div className='ItemCount-add'>
           <button className="removeButton" onClick={resta}>  
@@ -27,15 +29,8 @@ function ItemCount({ stock, initial, onAdd }) {
               {" "}+{" "}
           </button>
         </div>
-        <button className='addCarrito' onClick={onAdd}> Agregar al carrito </button>
+        <button className='addCarrito' onClick={onConfirm}> Agregaral carrito </button>
       </div>
-      {/* <h2>{contador}</h2>
-      <button onClick={suma}>Sumar</button>
-      <button onClick={resta}>Restar</button>
-      <br/>
-      <button onClick={onAdd}>Agregar al carrito</button>
-    </div> */}
-    </>
   );
 }
 

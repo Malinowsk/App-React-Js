@@ -1,4 +1,4 @@
-import React from 'react'
+import { React , useState } from "react"
 import ItemCount from '../ItemCount'
 import './style.css'
 
@@ -7,7 +7,11 @@ const ItemDetail = ({item}) => {
 
   const { name, description, tipo, price, img, stock } = item;
 
+  const [confirmado, setConfirmado] = useState(false);
 
+  const onAdd = (amount) => {
+    setConfirmado(true)
+  }
 
   return (
 
@@ -25,7 +29,8 @@ const ItemDetail = ({item}) => {
             <p> Stock : {stock} unidades</p>
           </div>
           <div className='Itemcount-container'>
-            <ItemCount stock={stock} initial={0} onAdd={() => alert('Agregado al carrito')}/>
+            <ItemCount stock={stock} initial={0} onAdd={onAdd}/>
+            {confirmado && <h3>agregado</h3>} 
           </div>
         </div>
       </div>
