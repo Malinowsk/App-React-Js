@@ -1,15 +1,20 @@
-import { React , useState } from "react"
+import { React , useState , useContext} from "react"
 import ItemCount from '../ItemCount'
 import './style.css'
-
+import { contexto } from "../../Context/CustomProvider";
 
 const ItemDetail = ({item}) => {
+  
+  const {agregarProducto} = useContext(contexto)
 
-  const { name, description, tipo, price, img, stock } = item;
+    
+  const { id, name, description, tipo, price, img, stock } = item;
 
   const [confirmado, setConfirmado] = useState(false);
 
   const onAdd = (amount) => {
+    const product = {id,name,price,img,amount}
+    agregarProducto(product)
     setConfirmado(true)
   }
 
@@ -29,8 +34,8 @@ const ItemDetail = ({item}) => {
             <p> Stock : {stock} unidades</p>
           </div>
           <div className='Itemcount-container'>
-            <ItemCount stock={stock} initial={0} onAdd={onAdd}/>
-            {confirmado && <h3>agregado</h3>} 
+            <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
+            {confirmado && <p> Se agregó exitosamente! </p>}
           </div>
         </div>
       </div>

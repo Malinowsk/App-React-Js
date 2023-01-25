@@ -5,7 +5,7 @@ function ItemCount({ stock, initial, onAdd }) {
 
   const [contador, setContador] = useState(initial);
   const resta = () => {
-    if (contador > 0) setContador(contador - 1);
+    if (contador > 1) setContador(contador - 1);
   };
 
   const suma = () => {
@@ -29,7 +29,7 @@ function ItemCount({ stock, initial, onAdd }) {
               {" "}+{" "}
           </button>
         </div>
-        <button className='addCarrito' onClick={onConfirm}> Agregaral carrito </button>
+        <button className='addCarrito' onClick={onConfirm}> Agregar al carrito </button>
       </div>
   );
 }

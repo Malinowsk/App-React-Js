@@ -31,9 +31,9 @@ function NavBar() {
             </nav>
 
             {/* CARRITO Y CONTADOR */}
-            <NavLink to="/cart">
+            <NavLink to="/carrito">
                 <div className="space-between">
-                    <CartWidget cantidad="0"/>
+                    <CartWidget/>
                 </div>
             </NavLink>
         </header>
