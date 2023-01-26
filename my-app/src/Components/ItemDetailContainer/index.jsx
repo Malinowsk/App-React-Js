@@ -1,26 +1,22 @@
 import React, { useEffect, useState } from 'react';
-
-import { arrayProductos } from '../../ArrayProductos/data.js';
 import ItemDetail from '../ItemDetail';
 import './style.css';
 import { useParams } from 'react-router';
+import { getDoc, doc } from "firebase/firestore"
+import { productsCollection } from '../../firebaseConfig';
 
 const ItemDetailContainer = () => {
 
   const { id } = useParams()
     const [detail, setDetail] = useState({})
     const [loading, setLoading] = useState(true);
-   
-    const getDetailPromise = new Promise((res,rej) => {
-        setTimeout(() => {
-          const productoFiltrado = arrayProductos.find(e => e.id === Number(id))
-          res(productoFiltrado)
-        }, (2000));
-    })
 
     const getDetail = async() =>{
       try {
-        const data = await getDetailPromise;
+        const referenciaDoc = doc(productsCollection,id)
+        const resultado = await getDoc(referenciaDoc);
+        const data = { id : resultado.id , ...resultado.data() }
+
         setDetail(data);
       } catch (error) {
         console.error(error);
@@ -33,24 +29,24 @@ const ItemDetailContainer = () => {
     useEffect(() => {
       setLoading(true);
       getDetail();
-      // eslint-disable-next-line  
+      // eslint-disable-next-line
     },[id])
 
-  
+
 
 
   return (
     <div className='itemdetail-container'>
-      {loading ? 
+      {loading ?
         (
           <p>Cargando, espere un momento...</p>
-        ) : detail ? 
+        ) : detail ?
           (
-            <ItemDetail item={detail} />  
-          ) : 
+            <ItemDetail item={detail} />
+          ) :
             (
               <p>No se encuentra disponible</p>
-              
+
             )
         }
     </div>

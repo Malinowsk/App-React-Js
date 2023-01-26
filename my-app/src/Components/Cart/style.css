@@ -1,0 +1,46 @@
+    main{
+    padding: 50px 0px 50px 0px;
+    }
+
+    h1{
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    }
+
+    h2{
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    }
+
+    span{
+    color: red;
+    }
+
+    button {
+    background-color: #beb0a7;
+    /* border: 1px solid black; */
+    border: 1px solid ivory;
+    color: ivory;
+    border-radius: 8px;
+    padding: 5px 20px;
+    }
+
+    .button-comprar {
+        text-decoration: none;
+        color: ivory;
+    }
+
+    button:hover{
+        background-color: #f8ac18;
+    }
+
+    main p{
+        margin-bottom: 40px;
+    }
+
+    @media only screen and (min-width: 768px)  {
+        main{
+            padding: 50px;
+        }
+    }

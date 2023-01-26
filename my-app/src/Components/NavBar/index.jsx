@@ -31,10 +31,11 @@ function NavBar() {
             </nav>
 
             {/* CARRITO Y CONTADOR */}
-            <div className="space-between">
-                <CartWidget cantidad="0"/>
-            </div>
-
+            <NavLink to="/carrito">
+                <div className="space-between">
+                    <CartWidget/>
+                </div>
+            </NavLink>
         </header>
     );
 }
