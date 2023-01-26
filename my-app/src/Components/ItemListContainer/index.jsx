@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import './style.css';
-import { arrayProductos } from "../../ArrayProductos/data.js";
+//import { arrayProductos } from "../../ArrayProductos/data.js";
 import ItemList from "../ItemList";
 import { useParams } from "react-router";
+import { productsCollection } from '../../firebaseConfig';
+import { getDocs , query , where } from "firebase/firestore";
 
 function ItemListContainer() {
   
@@ -10,36 +12,27 @@ function ItemListContainer() {
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getsProductsPromise = new Promise((res, rej) => {
-    setTimeout(() => {
-      if(id){
-        const productosFiltrados = arrayProductos.filter(e => e.category === id);
-        res(productosFiltrados);
-      }
-      else{
-        res(arrayProductos)
-      }  
-    }, 2000);
-  });
-  
-  const getsProducts = async() =>{
-    try {
-      const value = await getsProductsPromise;
-      setProductos(value);
-    } catch (error) {
-      console.error(error);
-    }
-    finally {
-      setLoading(false);
-    }
-   }
+    const getProducts = async() => {
+      try {
+        const filtro = id ? query(productsCollection,where("category","==",id)) : productsCollection;
+
+         const pedido = await getDocs(filtro);
+         const value = pedido.docs.map((doc) => {return { id : doc.id , ...doc.data() }});
+         setProductos(value);
+       } 
+       catch (error) {
+         console.error(error);
+       }
+       finally {
+         setLoading(false);
+       }
+     };
 
     useEffect(() => {
       setLoading(true);
-
-      getsProducts();
+      getProducts();
       // eslint-disable-next-line
-      }, [id]);
+     }, [id]);
 
   return (
     <main>

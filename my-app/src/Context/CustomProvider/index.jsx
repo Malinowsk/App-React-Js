@@ -44,7 +44,6 @@ const CustomProvider = ({ children }) => {
      }
 
      const estaEnCarrito = (id) => {
-         
         return carrito.some(prod => (
             (prod.id === id)
             ))
