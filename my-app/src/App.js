@@ -4,6 +4,7 @@ import ItemListContainer from './Components/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import Cart from './Components/Cart';
 import { Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path='/item/:id' element={<ItemDetailContainer/>} />
           <Route path='/carrito' element={<Cart/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 } 

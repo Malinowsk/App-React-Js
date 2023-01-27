@@ -15,7 +15,10 @@
     
  }
 
- 
+.mensaje{
+    margin-top: 10px;
+ }
+
  .data-container{
      display: flex ;
      flex-direction: column;
