@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail';
-import './style.css';
 import { useParams } from 'react-router';
 import { getDoc, doc } from "firebase/firestore"
 import { productsCollection } from '../../firebaseConfig';
+import { toast } from "react-toastify";
 
 const ItemDetailContainer = () => {
 
@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
 
         setDetail(data);
       } catch (error) {
-        console.error(error);
+        toast.error("Hubo un error, vuelva a intentarlo!");
       }
       finally {
         setLoading(false);
@@ -32,9 +32,6 @@ const ItemDetailContainer = () => {
       // eslint-disable-next-line
     },[id])
 
-
-
-
   return (
     <div className='itemdetail-container'>
       {loading ?
@@ -46,7 +43,6 @@ const ItemDetailContainer = () => {
           ) :
             (
               <p>No se encuentra disponible</p>
-
             )
         }
     </div>

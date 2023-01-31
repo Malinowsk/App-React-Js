@@ -1,5 +1,5 @@
 import './style.css'
-import { ShoppingCartOutlined } from '@ant-design/icons'; //ICONO DEL CARRITO
+import { ShoppingCartOutlined } from '@ant-design/icons';
 import { useContext } from "react";
 import { contexto } from "../../Context/CustomProvider";
     

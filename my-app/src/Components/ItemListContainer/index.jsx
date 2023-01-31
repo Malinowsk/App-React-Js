@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import './style.css';
-//import { arrayProductos } from "../../ArrayProductos/data.js";
 import ItemList from "../ItemList";
 import { useParams } from "react-router";
 import { productsCollection } from '../../firebaseConfig';
 import { getDocs , query , where } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 function ItemListContainer() {
   
@@ -21,7 +21,7 @@ function ItemListContainer() {
          setProductos(value);
        } 
        catch (error) {
-         console.error(error);
+         toast.error("Hubo un error, vuelva a intentarlo!");
        }
        finally {
          setLoading(false);

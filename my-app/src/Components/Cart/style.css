@@ -26,7 +26,7 @@
     padding: 5px 20px;
     }
 
-    .button-comprar {
+    .button {
         text-decoration: none;
         color: ivory;
     }
@@ -37,6 +37,10 @@
 
     main p{
         margin-bottom: 40px;
+    }
+
+    div.contain{
+        margin-top: 15px;
     }
 
     @media only screen and (min-width: 768px)  {

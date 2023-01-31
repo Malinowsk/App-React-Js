@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import CustomProvider from "./Context/CustomProvider"
-//import './firebaseConfig';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +14,9 @@ root.render(
       <BrowserRouter>
         <App/>
       </BrowserRouter>
+      <ToastContainer autoClose={2000}/>
     </CustomProvider>
   </React.StrictMode>
 );
 
-reportWebVitals();
+
