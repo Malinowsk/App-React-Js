@@ -9,7 +9,7 @@
 ``` npm install --save @ant-design/icons ```
 
 
-# [VIVA LA BIRRA -web-app-project 👋](https://beautiful-banoffee-f93522.netlify.app/)
+# [VIVA LA BIRRA - Web-App-Project 👋](https://beautiful-banoffee-f93522.netlify.app/)
 
 ## E-commerce construido con React Js y Firebase
 
@@ -26,12 +26,11 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 
 - Navegabilidad, simula una multi-page application.
 - En los procesos que pueden demorar un poco se muestra un loader.
-- En la página inicial se visualizan 4 productos aleatorios.
-- La barra de navegación es visible en todo momento.
+- En la página inicial se visualizan todas las cervezas.
 - El logo navega a la página de inicio.
 - Los enlaces de las categorías cambian su styling cuando el usuario se encuentra en esa categoría.
 - En el cart widget se muestran la cantidad de productos que se van cargando en el proceso de compra y además navega a la página del cart.
-- Las cards de los productos que se encuentran en las rutas "/" y "/category/..." navegan al detalle de cada producto.
+- Las cards de los productos que se encuentran en las rutas "/" y "/categoria/..." navegan al detalle de cada producto.
 - Las cards de los detalles tienen un selector de unidades y un botón para agregar al carrito. Una vez presionado el botón aparece un mensaje debajo diciendo que la carga fue exitosa.
 - Los productos cargados en el carrito persisten en el local storage.
 - En la vista del carrito se muestra el detalle de productos cargados, nombre, cantidad, precio unitario, descripcion e imagen. También hay una serie de botones que permiten, eliminar un producto en particular, vaciar el carrito completo.
