@@ -58,3 +58,15 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - React-hook-form y Yup - para las validaciones y manejo general del formulario.
 
 > [acá todas las dependencias utilizadas](https://github.com/MariaSoledadHiga/react-js-entrega-final/blob/main/package.json)
+
+# Dependencias
+
+```
+    "@ant-design/icons": "^4.8.0",
+    "firebase": "^9.16.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^9.1.1"
+```
