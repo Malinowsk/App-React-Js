@@ -42,4 +42,4 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - React-router-dom - para el ruteo de la aplicación.
 - React-toastify - Para el uso de mensajes 
 
-> [acá todas las dependencias utilizadas](https://github.com/Malinowsk/React-Js-App-Project/mi-app/package.json)
+> [acá todas las dependencias utilizadas](https://github.com/Malinowsk/React-Js-App-Project/my-app/package.json)
