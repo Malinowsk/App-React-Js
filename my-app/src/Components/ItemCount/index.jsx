@@ -24,7 +24,6 @@ function ItemCount({ stock, initial, onAdd }) {
           </button>
           <strong className="count"> {contador} </strong>
           <button className="addButton"  onClick={suma} 
-            //utilizo disable propiedad del buttom para desabilitar boton cuando llega al limite de stock
             disabled={contador === stock ? true : null }>
               {" "}+{" "}
           </button>

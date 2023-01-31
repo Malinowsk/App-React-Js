@@ -1,7 +1,7 @@
 import './style.css';
 import CartWidget from '../CartWidget';    
-import logo from '../../assets/logo.png';          // LOGO DE LA PAG
-import { MenuOutlined } from '@ant-design/icons'; //ICONO DEL BOTON HAMBURGUESA
+import logo from '../../assets/logo.png';        
+import { MenuOutlined } from '@ant-design/icons';
 import { Link, NavLink } from 'react-router-dom';
 
 
@@ -9,18 +9,16 @@ function NavBar() {
     
     return (
         <header className="header"> 
-            {/* BOTON PARA MOVIL */}
+            
             <div  className="button-hamb" onClick={toggerInvi}>
                 <MenuOutlined />
             </div>
-        
-            {/* LOGO Y NOMBRE DE WEB */}
+    
             <div className="space-between">
                 <img className="imagen-logo" src={logo} alt="logo-cerveza"/>
                 <Link to='/'><p className="titulo-logo">VIVA<br/>LA BIRRA</p></Link>
             </div>
         
-            {/* MENU DE NAVEGACION */}
             <nav className='content'>  
                 <ul id='menu' className='space-between menu invisibilidad' >
                     <li className='item-nav ' id="#home"><NavLink to='/'>Home</NavLink></li>
@@ -30,7 +28,6 @@ function NavBar() {
                 </ul>
             </nav>
 
-            {/* CARRITO Y CONTADOR */}
             <NavLink to="/carrito">
                 <div className="space-between">
                     <CartWidget/>
@@ -40,11 +37,8 @@ function NavBar() {
     );
 }
 
-/* FUNCION QUE HACE VISIBLE E INVISIBLE EL MENU PARA MOBILE*/
 function toggerInvi(){
     document.querySelector("#menu").classList.toggle("invisibilidad");
 }
-
-
 
 export default NavBar;

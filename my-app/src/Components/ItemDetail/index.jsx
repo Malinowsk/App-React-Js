@@ -35,8 +35,9 @@ const ItemDetail = ({item}) => {
           </div>
           <div className='Itemcount-container'>
             <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
-            {confirmado && <p> Se agregó exitosamente! </p>}
           </div>
+          
+          {confirmado && <p className="mensaje"> Se agregó exitosamente! </p>}
         </div>
       </div>
     </div>

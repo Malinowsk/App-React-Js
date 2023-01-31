@@ -1,8 +1,7 @@
-//la funcion initializeApp sirve para establecer una conexion con firebase
- import { initializeApp } from "firebase/app";
- import { getFirestore , collection } from "firebase/firestore"
+import { initializeApp } from "firebase/app";
+import { getFirestore , collection } from "firebase/firestore";
 
- const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBWfPMMo3xyZfXCYv_9YmttL5i8_W7vZcU",
   authDomain: "cervezas-21568.firebaseapp.com",
   projectId: "cervezas-21568",
@@ -12,7 +11,7 @@
   measurementId: "G-M9LSC3Y3ZL"
 };
 
-const app = initializeApp(firebaseConfig); //FirebaseApp
-const db = getFirestore(app); //Firestore
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app); 
 export const productsCollection = collection(db,"cervezas");
 export const ventasCollection = collection(db,"ventas");

@@ -3,9 +3,6 @@
     margin-top: 40px;
     background-color: ivory;
     border: 1px solid ivory;
-    
-    
-  
 }
 .item-container p{
     margin: 15px;
@@ -23,7 +20,6 @@
 
 .item-container button {
     background-color: #beb0a7;
-    /* border: 1px solid black; */
     border: 1px solid ivory;
     color: ivory;
     border-radius: 8px;
