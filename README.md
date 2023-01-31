@@ -1,14 +1,3 @@
-# React App
-
-* Para descargar la carpeta "node_modules", abrir la consola y ubicarse en la carpeta "my-app".
-
-``` npm install react-scripts --save ```
-
-* De ser necesario, descargar las dependencias que utilizan los iconos de ant desing.
-
-``` npm install --save @ant-design/icons ```
-
-
 # [VIVA LA BIRRA - Web-App-Project 👋](https://beautiful-banoffee-f93522.netlify.app/)
 
 ## E-commerce construido con React Js y Firebase
@@ -35,7 +24,7 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - Los productos cargados en el carrito persisten en el local storage.
 - En la vista del carrito se muestra el detalle de productos cargados, nombre, cantidad, precio unitario, descripcion e imagen. También hay una serie de botones que permiten, eliminar un producto en particular, vaciar el carrito completo.
 - En la misma página hay un boton para terminar el proceso de compra.
-- El resultado del proceso de compra se visualiza en un mensaje de exito con dos segundos de duración y a su vez se vacia el carrito.
+- El resultado del proceso de compra se visualiza en un mensaje de éxito con dos segundos de duración y a su vez se vacia el carrito.
 
 ### Funcionalidades desarrolladas pensando en la seguridad del proceso:
 
@@ -54,15 +43,3 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - React-toastify - Para el uso de mensajes 
 
 > [acá todas las dependencias utilizadas](https://github.com/Malinowsk/React-Js-App-Project/mi-app/package.json)
-
-# Dependencias
-
-```
-    "@ant-design/icons": "^4.8.0",
-    "firebase": "^9.16.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.1",
-    "react-scripts": "^5.0.1",
-    "react-toastify": "^9.1.1"
-```
