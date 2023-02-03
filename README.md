@@ -7,7 +7,7 @@ Consiste en un e-commerce de Cervezas, desarrollado como una single-page applica
 
 ![Captura de la web-app](https://res.cloudinary.com/dystdxfua/image/upload/v1674270280/just%/just-cupcake-home_lm19vv.jpg)
 
-> Link al deploy: [https://beautiful-banoffee-f93522.netlify.app/](https://beautiful-banoffee-f93522.netlify.app/) - [Link a demo](https://res.cloudinary.com/dystdxfua/video/upload/v1674278559/just%20cupcakes/just-cupcake_r6qkt2.mp4)
+> Link al deploy: [https://beautiful-banoffee-f93522.netlify.app/](https://beautiful-banoffee-f93522.netlify.app/) - [Link a demo](https://drive.google.com/file/d/1hmz4MT6uARHF4pgI3dVOHQpnexdoHSq3/view?usp=share_link)
 
 Creado con [Create React App](https://github.com/facebook/create-react-app).
 
