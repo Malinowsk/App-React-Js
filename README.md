@@ -3,7 +3,7 @@
 ## E-commerce construido con React Js y Firebase
 
 Este proyecto es mi entrega final del curso de React Js de Coderhouse.\
-Consiste en un e-commerce de Cervezas, desarrollado como una single-page application y responsive.
+Consiste en un e-commerce de Cervezas, desarrollado como responsive.
 
 [![Captura de la web-app](https://i.postimg.cc/nh8C47rX/Portada.png)](https://postimg.cc/BXgSsjx3)
 
@@ -32,7 +32,7 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - Cada vez que carga una página en la que se muestran productos se hace una llamada a firestore. De ese modo la app puede mostrar el stock disponible en ese momento.
 - Los botones para seleccionar la cantidad de productos que están en los detalles, están limitados por el stock.
 - En el carrito no se muestran productos duplicados. Si el mismo ya se agregó, y se vuelve a agregar, al mismo se le suman las cantidades.
-- El proceso de finalización de la compra se realiza con un llamado a firestore para agregar la compra correspondiente en una coleccion llamada ventas, el cual se guarda el id de los productos con sus cantidades, fecha de compra, y nro de coken de la compra.
+- El proceso de finalización de la compra se realiza con un llamado a firestore para agregar la compra correspondiente en una coleccion llamada ventas, el cual se guarda el id de los productos con sus cantidades, fecha de compra, y nro de token de la compra.
 - Las credenciales para la conexión con firebase y firestore están cargadas en variables de entorno.
 
 ### Bibliotecas complementarias:
