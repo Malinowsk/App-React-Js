@@ -12,7 +12,12 @@ function ItemListContainer() {
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(true);
 
-    const getProducts = async() => {
+    
+
+    useEffect(() => {
+      setLoading(true);
+
+      const getProducts = async() => {
       try {
         const filtro = id ? query(productsCollection,where("category","==",id)) : productsCollection;
 
@@ -28,10 +33,8 @@ function ItemListContainer() {
        }
      };
 
-    useEffect(() => {
-      setLoading(true);
       getProducts();
-      // eslint-disable-next-line
+      
      }, [id]);
 
   return (

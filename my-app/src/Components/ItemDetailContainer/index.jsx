@@ -11,25 +11,26 @@ const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({})
     const [loading, setLoading] = useState(true);
 
-    const getDetail = async() =>{
-      try {
-        const referenciaDoc = doc(productsCollection,id)
-        const resultado = await getDoc(referenciaDoc);
-        const data = { id : resultado.id , ...resultado.data() }
-
-        setDetail(data);
-      } catch (error) {
-        toast.error("Hubo un error, vuelva a intentarlo!");
-      }
-      finally {
-        setLoading(false);
-      }
-     }
-
     useEffect(() => {
       setLoading(true);
+
+      const getDetail = async() =>{
+        try {
+          const referenciaDoc = doc(productsCollection,id)
+          const resultado = await getDoc(referenciaDoc);
+          const data = { id : resultado.id , ...resultado.data() }
+  
+          setDetail(data);
+        } catch (error) {
+          toast.error("Hubo un error, vuelva a intentarlo!");
+        }
+        finally {
+          setLoading(false);
+        }
+      };
+
       getDetail();
-      // eslint-disable-next-line
+
     },[id])
 
   return (
@@ -46,7 +47,6 @@ const ItemDetailContainer = () => {
             )
         }
     </div>
-
   )
 }
 
