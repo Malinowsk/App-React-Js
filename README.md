@@ -5,7 +5,7 @@
 Este proyecto es mi entrega final del curso de React Js de Coderhouse.\
 Consiste en un e-commerce de Cervezas, desarrollado como una single-page application y responsive.
 
-![Captura de la web-app](https://drive.google.com/file/d/1SHzKzhhYLL-3xHkPQa30OdqxEIMtnW8f/view?usp=sharing)
+[![Captura de la web-app](https://i.postimg.cc/Hs66jYkv/Portada.png)](https://postimg.cc/RNn7Dzfw)
 
 > Link al deploy: [https://beautiful-banoffee-f93522.netlify.app/](https://beautiful-banoffee-f93522.netlify.app/) - [Link a demo](https://drive.google.com/file/d/1hmz4MT6uARHF4pgI3dVOHQpnexdoHSq3/view?usp=share_link)
 
