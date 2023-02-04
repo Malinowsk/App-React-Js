@@ -3,7 +3,7 @@
 ## E-commerce construido con React Js y Firebase
 
 Este proyecto es mi entrega final del curso de React Js de Coderhouse.\
-Consiste en un e-commerce de Cervezas, desarrollado como responsive.
+Consiste en un e-commerce de Cervezas, construido con React Js y Firebase.
 
 [![Captura de la web-app](https://i.postimg.cc/nh8C47rX/Portada.png)](https://postimg.cc/BXgSsjx3)
 
