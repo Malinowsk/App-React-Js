@@ -36,7 +36,7 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - Los botones para seleccionar la cantidad de productos que están en los detalles, están limitados por el stock.
 - En el carrito no se muestran productos duplicados. Si el mismo ya se agregó, y se vuelve a agregar, al mismo se le suman las cantidades.
 - El formulario para completar los datos tiene validaciones y en caso de contener algún error le muestra un mensaje al cliente.
-- El proceso de finalización de la compra se realiza con un llamado a firestore para agregar la compra correspondiente en una coleccion llamada ventas, el cual se guarda el id de los productos con sus cantidades, fecha de compra, y nro de token de la compra.
+- El proceso de finalización de la compra se realiza con un llamado a firestore para agregar la compra correspondiente en una coleccion llamada ventas, el cual se guarda el id de los productos con sus cantidades y precio, fecha y hora exacta que se realizó la compra, datos del comprador y nro de token de la compra.
 - Las credenciales para la conexión con firebase y firestore están cargadas en variables de entorno.
 
 ### Bibliotecas complementarias:
