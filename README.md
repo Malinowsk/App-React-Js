@@ -16,6 +16,7 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 ### Funcionalidades desarrolladas pensando en la experiencia de usuario:
 
 - La pag web es responsive con un enfoque Mobile First. 
+- Se agregó 'HKGrotesk-Medium' una familia de tipo de letra especial para lograr una mayor estética.
 - Navegabilidad, simula una multi-page application.
 - En los procesos que pueden demorar un poco se muestra un loader.
 - En la página inicial se visualizan todas las cervezas.
@@ -28,6 +29,7 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - En la vista del carrito se muestra el detalle de productos cargados, nombre, cantidad, precio unitario, descripcion e imagen. También hay una serie de botones que permiten, eliminar un producto en particular, vaciar el carrito completo.
 - En la misma página hay un formulario que el cliente debe completar antes de poder terminar el proceso de compra.
 - El resultado del proceso de compra se visualiza en un mensaje de éxito con dos segundos de duración y a su vez se vacia el carrito.
+
 
 ### Funcionalidades desarrolladas pensando en la seguridad del proceso:
 
