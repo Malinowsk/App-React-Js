@@ -11,6 +11,10 @@ const Cart = () => {
     
     const {carrito,total,cantidad,vaciarCarrito} = useContext(contexto);
     const [loading, setLoading] = useState(false);
+    const [username, setUsername] = useState("");
+    const [lastname, setLastname] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
     
     const fill = (number, len) => "0".repeat(len - number.toString().length) + number.toString();
     
@@ -32,9 +36,9 @@ const Cart = () => {
         setLoading(true);
         const compra = {
             usuario: {
-                nombre: "Juan Ignacio Rago",
-                email: "juan2015@gmail.com",
-                telefono: "2494542375"
+                nombre: username + " " + lastname,
+                email: email,
+                telefono: phone
             },
             carrito: carrito.map((itm) => ({
                 id: itm.id,
@@ -63,7 +67,35 @@ const Cart = () => {
                         </div>
                         <h2>Cantidad total de cervezas: <span>{cantidad}</span></h2>
                         <h2>Total a pagar es : <span>$ {total}</span></h2>
-                        <button className='button' onClick={hacerComprar}>Finalizar Compra</button>
+
+                        <h2> Completá tu información para finalizar la compra</h2>
+
+
+                        <form class="form" onSubmit={hacerComprar}>
+                            <div class="contenedor-contacto">
+                                <div class="cont-interno">
+                                    <label>Nombre <strong>(*)</strong></label>
+                                    <input type="text" placeholder="Nombre" value={username}
+                                    onChange={event=>{setUsername(event.target.value);}} required/>
+                            </div>
+                            <div class="cont-interno">
+                                    <label >Apellido <strong>(*)</strong></label>
+                                    <input type="text" placeholder="Apellido" value={lastname}
+                                    onChange={event=>{setLastname(event.target.value);}} required/>
+                                </div>
+                                <div class="cont-interno">
+                                    <label>Email  <strong>(*)</strong></label>
+                                    <input type="email" placeholder="Email" value={email}
+                                    onChange={event=>{setEmail(event.target.value);}} required/>
+                                </div>
+                                <div class="cont-interno">
+                                    <label>Telefono <strong>(*)</strong></label>
+                                    <input type="text" placeholder="Telefono" value={phone}
+                                    onChange={event=>{setPhone(event.target.value);}} required/>
+                                </div> 
+                            </div>
+                            <button className='button'>Finalizar Compra</button>
+                        </form>
                     </> : 
                     <>
                         <p>Su carrito esta vacio </p>

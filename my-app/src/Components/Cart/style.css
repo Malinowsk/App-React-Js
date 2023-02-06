@@ -13,10 +13,6 @@
     margin-top: 40px;
     }
 
-    span{
-    color: red;
-    }
-
     button {
     background-color: #beb0a7;
     /* border: 1px solid black; */
@@ -43,8 +39,75 @@
         margin-top: 15px;
     }
 
+
+    
+    input{
+        border: 2px solid #d8e1e4;
+        height: 40px;
+        width: 90%;
+        padding: 0px 5px;
+    }
+
+    input::placeholder{
+        text-align: left;
+        letter-spacing: 1px;
+        text-indent: 0px; 
+    }
+
+    input:focus{
+        outline: none; 
+    }
+
+    .contenedor-contacto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    div.cont-interno{
+        margin-bottom: 20px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    form{
+        background-color: #f8ac18;
+        opacity: 0.8;
+        border-radius: 5px;
+        border: dashed 5px;
+        border-color: #01111A;
+        padding: 30px;
+    }
+
+    form button{
+        padding: 12px;
+    }
+
+    form button:hover{
+        background-color: black;
+        opacity: 0.8;
+    }
+    
     @media only screen and (min-width: 768px)  {
         main{
             padding: 50px;
+        }
+
+        div.cont-interno{
+            width: 45%;
+            padding-bottom: 0px;
+            flex-wrap: nowrap;
+            display: flex;
+            justify-content: inherit;
+            margin-right: 5%;
+            align-items: center;
+        }
+        
+
+        input{
+            width: 65%;
+            padding: 0px 24px;
+            height: 50px;
         }
     }
