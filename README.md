@@ -41,6 +41,7 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - El proceso de finalización de la compra se realiza con un llamado a firestore para agregar la compra correspondiente en una coleccion llamada ventas, el cual se guarda el id de los productos con sus cantidades y precio, fecha y hora exacta que se realizó la compra, datos del comprador y nro de token de la compra.
 - Las credenciales para la conexión con firebase y firestore están cargadas en variables de entorno.
 
+
 ### Bibliotecas complementarias:
 
 - Firebase - Para el almacenamiento de datos.
@@ -49,6 +50,7 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - React-toastify - Para el uso de mensajes 
 
 > [acá todas las dependencias utilizadas](https://github.com/Malinowsk/React-Js-App-Project/blob/main/my-app/package.json)
+
 
 ### Sobre mi:
 
