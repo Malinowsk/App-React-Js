@@ -50,8 +50,3 @@ Creado con [Create React App](https://github.com/facebook/create-react-app).
 - React-toastify - Para el uso de mensajes 
 
 > [acá todas las dependencias utilizadas](https://github.com/Malinowsk/React-Js-App-Project/blob/main/my-app/package.json)
-
-
-### Sobre mi:
-
-Mi nombre es Juan Ignacio Rago. Vivo en Argentina, Provincia de Buenos Aires en la ciudad de Tandil. Soy Analista de Sistemas. Estudiante avanzado en la carrera de Ingeniería de Sistemas. Estudiante avanzado en Tecnicatura Universitaria en Desarrollo de Aplicaciones Informática, título que me dio la posibilidad de especializarme en programación web. Obtuve mi primera experiencia trabajando como desarrollador de software en Ceres Tolvas S.A. Espero seguir aprendiendo, capacitándome y estudiando porque es algo que me apasiona y me hace feliz.
